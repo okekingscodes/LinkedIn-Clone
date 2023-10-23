@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinkedIn Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="navbar-left">
+            <a href="index.html" class="logo"><img src="images/logo.png" alt="logo"></a>
+
+            <div class="search-box">
+                <img src="images/searchbox.png">
+                <input type="text" placeholder="Search">
+            </div>
+        </div>
+        <div class="navbar-center">
+            <ul>
+                <li><a href="index.html" class="active-link"><img src="images/share.png"><span>Home</span></a></li>
+                <li><a href="#"><img src="images/share.png"><span>My Network</span></a></li>
+                <li><a href="#"><img src="images/share.png"><span>Jobs</span></a></li>
+                <li><a href="#"><img src="images/share.png"><span>Messaging</span></a></li>
+                <li><a href="#"><img src="images/share.png"><span>Notifications</span></a></li>
+            </ul>
+        </div>
+        <div class="navbar-right">
+            <div class="online">
+                <img src="images/profile.jpg" class="nav-profile-img" onclick="toggleMenu()">
+            </div>
+        </div>
+
+        <!------Profile drop down menu-------->
+        <div class="profile-menu-wrap" id="profileMenu">
+            <div class="profile-menu">
+                <div class="user-info">
+                    <img src="images/profile.jpg">
+                    <div>
+                        <h3>Odim Kingsley</h3>
+                        <a href="#">See your profile</a>
+                    </div>
+                </div>
+                <hr>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/feedback.png">
+                    <p>Give Feedback</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/feedback.png">
+                    <p>Settings & Privacy</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/feedback.png">
+                    <p>Help & Support</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/feedback.png">
+                    <p>Display & Accessibility</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/feedback.png">
+                    <p>Logout</p>
+                    <span>></span>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <!--------Main page------------>
+   <div class="container">
+    <div class="profile-main">
+        <div class="profile-container">
+            <img src="images/cover.jpeg" width="100%" height="200px">
+            <div class="profile-container-inner">
+                <img src="images/profile.jpg" class="profile-pic">
+                <h1>Odim Kingsley</h1>
+                <b>Web Developer | TechMpigo Community Manager</b>
+                <p>Abuja-FCT, Nigeria &middot; <a href="#">Contact Info</a></p>
+                <div class="mutual-connection">
+                    <img src="images/shortcut1.jpg">
+                    <span>1 mutual connection: Bright Maxwell</span>
+                </div>
+                <div class="profile-btn">
+                    <a href="#" class="primary-btn"><img src="images/share.png">Connect</a>
+                    <a href="#"><img src="images/comment.png">Chat</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="profile-sidebar"></div>
+   </div>
+</body>
+
+<script src="script.js"></script>
+</html>
