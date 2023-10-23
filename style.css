@@ -45,6 +45,10 @@ a {
 .navbar-center ul li a img {
     width: 30px;
 }
+.navbar-center ul li a i.fa {
+    color: blue;
+    font-size: 22px;
+}
 .navbar-center ul li a:hover::after,
 .navbar-center ul li a.active-link::after {
     width: 100%;
